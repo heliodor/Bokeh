@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/bokeh_settings">
+
+	<bokeh.live.wallpaper.SettableMappedIndexPreference
+	    android:widgetLayout="@layout/settable_preference"
+	    android:key="bokeh_count"
+	    android:title="Bokeh count">
+	</bokeh.live.wallpaper.SettableMappedIndexPreference>
+	<bokeh.live.wallpaper.SettableMappedIndexPreference
+	    android:widgetLayout="@layout/settable_preference"
+	    android:key="effect_type"
+	    android:title="Effect type">
+	</bokeh.live.wallpaper.SettableMappedIndexPreference>
+	<CheckBoxPreference
+	    android:key="slight_blur"
+	    android:title="Slight blur">
+	</CheckBoxPreference>
+	<CheckBoxPreference
+	    android:key="radiating_waves"
+	    android:title="Radiating waves">
+	</CheckBoxPreference>
+
+    <PreferenceCategory
+        android:title="Color">
+		<bokeh.live.wallpaper.SettableMappedIndexPreference
+		    android:widgetLayout="@layout/settable_preference"
+		    android:key="min_transparency"
+		    android:title="Min transparency">
+		</bokeh.live.wallpaper.SettableMappedIndexPreference>
+		<bokeh.live.wallpaper.SettableMappedIndexPreference
+		    android:widgetLayout="@layout/settable_preference"
+		    android:key="max_transparency"
+		    android:title="Max transparency">
+		</bokeh.live.wallpaper.SettableMappedIndexPreference>
+		<bokeh.live.wallpaper.SettableMappedIndexPreference
+		    android:widgetLayout="@layout/settable_preference"
+		    android:key="brightness"
+		    android:title="Brightness">
+		</bokeh.live.wallpaper.SettableMappedIndexPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Size">
+		<bokeh.live.wallpaper.SettableMappedIndexPreference
+		    android:widgetLayout="@layout/settable_preference"
+		    android:key="min_radius"
+		    android:title="Min radius">
+		</bokeh.live.wallpaper.SettableMappedIndexPreference>
+		<bokeh.live.wallpaper.SettableMappedIndexPreference
+		    android:widgetLayout="@layout/settable_preference"
+		    android:key="max_radius"
+		    android:title="Max radius">
+		</bokeh.live.wallpaper.SettableMappedIndexPreference>
+		<bokeh.live.wallpaper.SettableMappedIndexPreference
+		    android:widgetLayout="@layout/settable_preference"
+		    android:key="min_outline_width"
+		    android:title="Min outline width">
+		</bokeh.live.wallpaper.SettableMappedIndexPreference>
+		<bokeh.live.wallpaper.SettableMappedIndexPreference
+		    android:widgetLayout="@layout/settable_preference"
+		    android:key="max_outline_width"
+		    android:title="Max outline width">
+		</bokeh.live.wallpaper.SettableMappedIndexPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Movement">
+		<bokeh.live.wallpaper.SettableMappedIndexPreference
+		    android:widgetLayout="@layout/settable_preference"
+		    android:key="min_speed"
+		    android:title="Min speed">
+		</bokeh.live.wallpaper.SettableMappedIndexPreference>
+		<bokeh.live.wallpaper.SettableMappedIndexPreference
+		    android:widgetLayout="@layout/settable_preference"
+		    android:key="max_speed"
+		    android:title="Max speed">
+		</bokeh.live.wallpaper.SettableMappedIndexPreference>
+		<bokeh.live.wallpaper.SettableMappedIndexPreference
+		    android:widgetLayout="@layout/settable_preference"
+		    android:key="frame_rate"
+		    android:title="Frame rate">
+		</bokeh.live.wallpaper.SettableMappedIndexPreference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

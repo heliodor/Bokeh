@@ -1,0 +1,8 @@
+.dropbox
+.DS_Store
+Icon
+
+local.properties
+.gradle
+.idea
+app/build

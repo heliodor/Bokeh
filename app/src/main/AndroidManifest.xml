@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:installLocation="auto"
+    package="bokeh.live.wallpaper"
+    android:versionCode="7"
+    android:versionName="1.6">
+    <application
+        android:label="@string/wallpapers"
+        android:theme="@android:style/Theme.Light"
+        android:icon="@drawable/ic_launcher_wallpaper">
+        <service
+            android:label="@string/wallpaper_bokeh"
+            android:name=".BokehWallpaper"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/bokeh" />
+        </service>
+        <activity
+            android:label="@string/bokeh_settings"
+            android:name=".BokehWallpaperSettings"
+            android:exported="true">
+        </activity>
+    </application>
+    <uses-sdk android:minSdkVersion="7" />
+    <uses-feature android:name="android.software.live_wallpaper" />
+	<supports-screens
+		android:normalScreens="true"
+		android:largeScreens="true"
+		android:anyDensity="true" /> 
+</manifest>
